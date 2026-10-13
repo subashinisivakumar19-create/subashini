@@ -1,0 +1,111 @@
+<!DOCTYPE>
+<html>
+    <head>
+        <meta name="viewsport" content="width-device-width, initial-scale=1.0">
+        <title>web page</title>
+        <style>
+            #div{
+                color:red;
+                font-size: 20px;
+                font-family: georgia;
+                background-color: purple;
+                width:200px;
+                height:200px;
+                margin:50px;
+                padding:50px;
+                border:2px solid black;
+                border-radius: 10px;
+                float:left;
+            }
+            div:hover{ /* pseudo code*/
+                background-color: white;
+                box-shadow: insert 2px 2px 20px grey;
+            }
+            a:active{
+                font-size: 30px;
+            }
+            a:visited{
+                font-family: Georgia;
+                font-size: 50px;
+            }
+            a{
+                text-decoration: none;
+            }
+            ul:first-child{
+                color:red;
+            }
+            li:last-child{
+                color: blue;
+            }
+            li:nth-child(3){ /*3 position */
+                color: brown;
+            }
+            li:nth-child(2n){ /*even position*/
+                color: blueviolet;
+            }
+            li:nth-child(2n-1){ /*odd position*/
+                color:chartreuse;
+            }
+            p::first-letter{ /*pseudo element*/
+                text-transform: uppercase;
+                color:red;
+            }
+            p::first-line{
+                color: blue;
+            }
+            p::before{
+                content:'welcome';
+            }
+            p::after{
+                content:"Thank you"
+            }
+            @media(max-width:500px){
+            }
+            @media(max-width:300px){
+                .container{
+                    display: grid;
+                    grid-template-columns: 1fr 1fr;
+                    height: 100px;
+                    column-gap: 5px;
+                    row-gap: 5px;
+                }
+            }
+        
+            span{
+                color:blue;
+                font-size:30px;
+            }
+            #one{
+                color:brown;
+                font-family: 30;
+            }
+            .two{
+                color:blueviolet;
+                font-family: blue;
+            }
+        </style>
+    </head>
+    <body>
+        <ul>
+            <li>mango</li>
+            <li>orange</li>
+            <li>grape</li>
+            <li>apple</li>
+        </ul>
+       < div>
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSeA1q7BhvRPzhlBAvvZq0v9zu2A0fkv3Clm3g4JWr6cQ&s" alt="" srcset="">
+        </div>
+        <a href="home.html">go home</a>
+        <div>hello</div>
+        <div id="one">world</div>
+        <div class="two">hello loyola</div>
+        <div class="two">hello chennai</div>
+<div class=container>
+    <div style="background-color: red;">div1</div>
+    <div style="background-color: blue;">div1</div>
+    <div style="background-color: green;">div1</div>
+    <div style="background-color: yellow;">div1</div>
+
+</div>
+        </body>
+</html>

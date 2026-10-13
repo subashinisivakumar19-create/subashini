@@ -1,0 +1,94 @@
+<!DOCTYPE>
+<html>
+    <head>
+        <title>home page</title>
+    </head>
+    <script>
+function test(){
+    var first=document.getElementById("first").value;
+    var second=document.getElementById("second").value;
+    var result=+first+(+second);
+    alert(result);
+
+}
+function subtract(){
+var first=document.getElementById("first").value;
+var second=document.getElementById("second").value;
+var result=+first-(+second);
+alert(result);
+}
+function multiply(){
+    var first=document.getElementById("first").value;
+    var second=document.getElementById("second").value;
+    var result=first*(second);
+    alert(result);
+}
+function findFactorial(){
+    var first=document.getElementById("fact").value;
+    var fact=1;
+    if(+first==0){
+        fact=1;
+    }else{
+        for(i=1;i<=(+first);i++){
+            fact*=i;
+        }
+    }
+    alert(fact);
+}
+var showScore=()=>{
+    var name=document.getElementById("name").value;
+    var mark1=document.getElementById("mark2").value;
+    var mark2=document.getElementById("mark2").value;
+    var mark3=document.getElementById("mark3").value;
+    var total=+mark1+ (+mark1)+ (+mark3);
+    var avg=total/3;
+    if(avg>50){
+        alert(name+"passed");
+    }else{
+        alert(name+"failed");
+    }
+}
+var convert=()=>{
+    var amount=document.getElementById("amount").value;
+    var currency=document.getElementById("currency").value;
+    if(currency=='dollar'){
+        var rate=97*(+amount);
+        alert(rate+"rupees");
+    }
+    if(currency=='pond'){
+        var rate=128*(+amount);
+        alert(rate+"rupees");
+    }
+    if(currency=='euro'){
+        var rate=108*(+amount);
+        alert(rate+"rupees");
+    }
+}
+    </script>
+    <body>
+        <h2>Home page</h2>
+        first number:<input type="text" id="first"><br>
+        second number:<input type="text" id="second"><br>
+        <button onclick="test()">add</button>
+        <button onclick="subtract()">subtract</button><br>
+        <button onclick="multiply()">multiply</button><br>
+        <h3>Find Factorial</h3>
+        Enter number:<input type="text" id="fact"><br>
+        <button onclick="findFactorial()">find factorial</button>
+        <hr>
+        Enter name:<input type="text" id="name"><br>
+        Mark 1:<input type="number" id="mark1"/><br>
+        Mark 2:<input type="number" id="mark2"/><br>
+        Mark 3:<input type="number" id="mark3"/><br>
+        <button onclick="showScore()">show Result</button>
+        <h3>Currency converter</h3>
+        Amount: <input type="text" id="amount"><br>
+        Currency:<select id="currency">
+            <option value="dollar">Dollar</option>
+            <option value="euro">Euro</option>
+                
+        </select> <br>
+        <button onclick="convert()">convert to rupee</button>
+
+    </body>
+</html>
