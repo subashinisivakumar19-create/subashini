@@ -12,5 +12,10 @@ let multiply=(a,b)=>{
 return a*b;
 }
 
-export default add;   // default export
-export {subtract,multiply};    // named export
+let findmin=(a,b)=>{
+    if(a>b){
+        return a;
+    }else{
+        return b;
+    }
+}
