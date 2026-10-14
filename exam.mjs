@@ -1,6 +1,6 @@
 // ES6 MODULE
 
-console.log("helo");
+console.log("helo from dev branch")
 
 let add=(a,b)=>{
     return a+b;
